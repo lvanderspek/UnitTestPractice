@@ -107,6 +107,19 @@ TEST(PracticeTest, sort_dual_small_first)
 
 
 
+TEST(PracticeTest, empty_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, single_character)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("a");
+    ASSERT_TRUE(actual);
+}
 
 TEST(PracticeTest, is_simple_palindrome)
 {
