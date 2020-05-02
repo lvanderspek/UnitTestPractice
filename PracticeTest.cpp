@@ -29,11 +29,54 @@ TEST(PracticeTest, sort_inorder)
     ASSERT_EQ(1, thr);
 }
 
+TEST(PracticeTest, sort_large)
+{
+    int one = 3;
+    int two = 1;
+    int thr = 2;
+
+    Practice obj;
+    obj.sortDescending(one, two, thr);
+
+    ASSERT_EQ(3, one);
+    ASSERT_EQ(2, two);
+    ASSERT_EQ(1, thr);
+}
+
+
 TEST(PracticeTest, sort_large_last)
+{
+    int one = 2;
+    int two = 1;
+    int thr = 3;
+
+    Practice obj;
+    obj.sortDescending(one, two, thr);
+
+    ASSERT_EQ(3, one);
+    ASSERT_EQ(2, two);
+    ASSERT_EQ(1, thr);
+}
+
+TEST(PracticeTest, sort_large_middle)
 {
     int one = 2;
     int two = 3;
     int thr = 1;
+
+    Practice obj;
+    obj.sortDescending(one, two, thr);
+
+    ASSERT_EQ(3, one);
+    ASSERT_EQ(2, two);
+    ASSERT_EQ(1, thr);
+}
+
+TEST(PracticeTest, sort_reverse)
+{
+    int one = 1;
+    int two = 2;
+    int thr = 3;
 
     Practice obj;
     obj.sortDescending(one, two, thr);
